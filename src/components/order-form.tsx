@@ -9,8 +9,8 @@ export default function OrderForm() {
     const [submitted, setSubmitted] = useState(false)
 
     const fieldClass =
-        "mt-1.5 w-full border-2 border-ink bg-paper px-4 py-2.5 text-sm text-ink outline-none focus:border-vermillion"
-    const labelClass = "text-sm font-bold uppercase tracking-wide text-ink"
+        "mt-1.5 w-full border-2 border-paper/30 bg-indigo px-4 py-2.5 text-sm text-paper outline-none placeholder:text-paper/40 focus:border-vermillion"
+    const labelClass = "text-sm font-bold uppercase tracking-wide text-paper"
 
     return (
         <form
@@ -73,13 +73,13 @@ export default function OrderForm() {
                 >
                     Send Enquiry
                 </button>
-                <p className="text-xs text-ink/50">
+                <p className="text-xs text-paper/50">
                     Design preview only — this form isn&apos;t connected yet.
                 </p>
             </div>
 
             {submitted && (
-                <p className="border-2 border-ink bg-gold/20 px-4 py-3 text-sm font-medium text-ink">
+                <p className="border-2 border-gold bg-gold/10 px-4 py-3 text-sm font-medium text-paper">
                     This is a preview, so nothing was actually sent — but this is exactly
                     how the real enquiry form will work once it&apos;s switched on.
                 </p>

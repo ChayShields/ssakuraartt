@@ -46,21 +46,21 @@ export default function FaqPage() {
     return (
         <main className="bg-indigo-deep pt-[73px]">
             <section className="mx-auto max-w-3xl px-4 py-16 sm:px-6 sm:py-24">
-                <p className="text-xs font-bold uppercase tracking-widest text-gold">FAQ</p>
+                <p className="text-xs font-bold uppercase tracking-widest text-paper">FAQ</p>
                 <h1 className="mt-3 font-display text-4xl font-bold uppercase text-paper sm:text-5xl">
                     Frequently Asked Questions
                 </h1>
                 <p className="mt-4 text-lg text-paper/70">
                     Everything commonly asked before starting a commission.
                 </p>
-                <div className="ink-panel mt-10 divide-y-2 divide-ink bg-paper">
+                <div className="ink-panel mt-10 divide-y-2 divide-ink/40 bg-indigo-deep">
                     {faqs.map((faq) => (
                         <details key={faq.question} className="group px-6 py-5">
-                            <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-bold text-ink">
+                            <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-bold text-paper">
                                 {faq.question}
-                                <ChevronDown className="h-4 w-4 shrink-0 text-vermillion transition-transform group-open:rotate-180" aria-hidden />
+                                <ChevronDown className="h-4 w-4 shrink-0 text-paper transition-transform group-open:rotate-180" aria-hidden />
                             </summary>
-                            <p className="mt-3 text-sm leading-relaxed text-ink/70">{faq.answer}</p>
+                            <p className="mt-3 text-sm leading-relaxed text-paper/70">{faq.answer}</p>
                         </details>
                     ))}
                 </div>
