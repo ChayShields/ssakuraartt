@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+/*
+DIRECTION CONTRACT
+THESIS: A commission site for a hand-painting artist should look like her own
+work — bold ink outlines, flat committed colour, not a soft SaaS template.
+OWN-WORLD: Japanese woodblock print (ukiyo-e) fused with sneaker-drop
+culture. Deep indigo ground, vermillion + sakura pink as committed colour
+blocks, heavy black ink borders as panel frames, a recurring cherry-blossom
+branch line motif, gold hairline dividers.
+STORY: a visitor feels "this is a bold working artist" in one viewport, not
+"generic small-business template."
+FIRST VIEWPORT: full-bleed indigo hero, oversized reversed headline, the
+real cherry-blossom cap photo framed in a thick ink panel border, a blossom
+branch motif bleeding off the edge.
+FORM: ukiyo-e print panel system — flat colour fields, ink borders, no soft
+shadows or pastel gradients.
+FINISH: unreviewed and undocumented is unfinished.
+*/
+
+:root {
+  --background: #14111c;
+  --foreground: #f8f1e8;
+  --ink: #0b0910;
+  --paper: #f8f1e8;
+  --sakura: #ec4c82;
+  --sakura-deep: #c22b60;
+  --vermillion: #e8542c;
+  --indigo: #201a2e;
+  --indigo-deep: #14111c;
+  --gold: #d9a441;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-ink: var(--ink);
+  --color-paper: var(--paper);
+  --color-sakura: var(--sakura);
+  --color-sakura-deep: var(--sakura-deep);
+  --color-vermillion: var(--vermillion);
+  --color-indigo: var(--indigo);
+  --color-indigo-deep: var(--indigo-deep);
+  --color-gold: var(--gold);
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body);
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+}
+
+.ink-panel {
+  border: 3px solid var(--ink);
+  box-shadow: 6px 6px 0 0 var(--ink);
+}
+
+.blossom-motif {
+  position: absolute;
+  pointer-events: none;
+  opacity: 0.9;
+}
