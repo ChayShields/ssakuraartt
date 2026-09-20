@@ -16,7 +16,7 @@ Next.js (App Router) + TypeScript + Tailwind CSS.
 - `/faq` — common commission questions.
 - Design direction: Japanese woodblock-print-inspired (deep indigo ground,
   committed vermillion/sakura-pink colour blocks, ink-panel borders, a
-  cherry-blossom motif), built with the Impeccable design skill.
+  cherry-blossom motif).
 
 ## What's NOT finished yet — needed before this could go live
 
